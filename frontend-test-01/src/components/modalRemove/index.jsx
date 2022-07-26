@@ -28,6 +28,7 @@ export default function ModalRemove({ item, setFiltredList }) {
   });
 
   const onSubmitFunction = (data) => {
+    setFiltredList([]);
     dispatch(UpdateNewItem(item, data));
     handleClose();
   };
